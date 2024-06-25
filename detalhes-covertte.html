@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detalhes do Produto - Covertte</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #333;
+      padding: 10px;
+      color: #fff;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      margin-right: 20px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .detalhamento-produto {
+      padding: 20px;
+    }
+
+    .detalhamento-produto img {
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    /* Media queries para celulares */
+    @media screen and (max-width: 480px) {
+      nav ul {
+        flex-direction: column;
+      }
+
+      nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+
+      .detalhamento-produto {
+        padding: 10px;
+      }
+    }
+
+    /* Media queries para tablets */
+    @media screen and (min-width: 481px) and (max-width: 1024px) {
+      nav ul {
+        flex-direction: row;
+      }
+    }
+
+    /* Media queries para desktops/laptops */
+    @media screen and (min-width: 1025px) {}
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <div>Concessionária YYYYY</div>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="produtos.html">Produtos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <article id="detalhamento-produto" class="detalhamento-produto">
+    <img src="https://http2.mlstatic.com/D_NQ_NP_938864-MLB73368691029_122023-O.jpg" alt="Detalhe do Produto">
+    <div>
+      <h2>Covertte</h2>
+      <p> Um classico Covertte</p>
+      <p>Motor V8 5.7 litros</p>       
+        <p>Movido à gasolina</p>
+        <p>Câmbio manual de 6 marchas</p>
+        <p>Bancos em couro na cor preta, bem conservados</p>
+        <p>Possui Ar condicionado</p>
+        <p>Entre em contato agora mesmo pelo nosso email</p>
+
+         
+    </div>
+  </article>
+</body>
+
+</html>

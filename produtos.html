@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos - Concessionária de Carros</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #333;
+            padding: 10px;
+            color: #fff;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .grid-produtos {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .produto {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .produto img {
+            max-width: 100%;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Media queries para celulares */
+        @media screen and (max-width: 480px) {
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav ul li {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+
+            .produto {
+                padding: 5px;
+            }
+        }
+
+        /* Media queries para tablets */
+        @media screen and (min-width: 481px) and (max-width: 1024px) {
+            nav ul {
+                flex-direction: row;
+            }
+
+            .produto {
+                padding: 10px;
+            }
+        }
+
+        /* Media queries para desktops/laptops */
+        @media screen and (min-width: 1025px) {
+            .produto {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div>Concessionária YYYYY</div>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="produtos" class="grid-produtos">
+        <div class="produto">
+            <img src="https://motorshow.com.br/wp-content/uploads/sites/2/2021/07/nissan-skyline-gt-r-v-spec-ii-nur-1.jpg"
+                alt="Um potente e classico Nissan Skyline GT-R R34 ">
+            <h3>Nissan Skyline GT-R R34</h3>
+            <p>R$ 1.579.000,00.</p>
+            <a href="detalhes-skyline-r34.html">Ver Detalhes</a>
+        </div>
+        <div class="produto">
+            <img src="https://i.pinimg.com/736x/86/f2/36/86f236afd1d853147bb761e8c77754ac.jpg"
+                alt="Um classico Dodge Charger antigo">
+            <h3> Dodge Charger</h3>
+            <p>R$ 650.000,00</p>
+            <a href="detalhes-dodge-charger.html">Ver Detalhes</a>
+        </div>
+        <div class="produto">
+            <img src="https://http2.mlstatic.com/D_NQ_NP_938864-MLB73368691029_122023-O.jpg" alt="Um classico Covertte">
+            <h3>Covertte</h3>
+            <p>R$550.000,000</p>
+            <a href="detalhes-covertte.html">Ver Detalhes</a>
+        </div>
+        <div class="produto">
+            <img src="https://i.pinimg.com/736x/a4/60/ee/a460ee0d334b0a18e93bd69b88e73296.jpg"
+                alt="Um potente e classico camaro SS">
+            <h3>Camaro SS</h3>
+            <p>R$ 750.000,00</p>
+            <a href="detalhes-camaro-ss.html">Ver Detalhes</a>
+        </div>
+    </section>
+
+    <footer id="rodape">
+        <p>Concessionária de Carros YYYYY © 2024</p>
+        <p><a href="email:contato@concessionaria.com">contatoloja@concessionariaYYYYY.com.br</a></p>
+        <p>Endereço: Rua Av brasil, 450, Rio de janeiro, RJ</p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Produto - Dodge Charger</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #333;
+            padding: 10px;
+            color: #fff;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .detalhamento-produto {
+            padding: 20px;
+        }
+
+        .detalhamento-produto img {
+            max-width: 100%;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Media queries para celulares */
+        @media screen and (max-width: 480px) {
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav ul li {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+
+            .detalhamento-produto {
+                padding: 10px;
+            }
+        }
+
+        /* Media queries para tablets */
+        @media screen and (min-width: 481px) and (max-width: 1024px) {
+            nav ul {
+                flex-direction: row;
+            }
+        }
+
+        /* Media queries para desktops/laptops */
+        @media screen and (min-width: 1025px) {}
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div>Concessionária YYYYY</div>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <article id="detalhamento-produto" class="detalhamento-produto">
+        <img src="https://i.pinimg.com/736x/86/f2/36/86f236afd1d853147bb761e8c77754ac.jpg" alt="Detalhe do Produto">
+        <div>
+            <h2>Dodge Charger</h2>
+            <p>Para os amantes dos muscle cars</p>
+            <p>Motor V8</p> 
+            <p>A gasolina</p> 
+            <p>Cambio de 4 marchas manual </p> 
+            <p>Entre em contato agora mesmo pelo nosso email</p>
+        </div>
+    </article>
+</body>
+
+</html>

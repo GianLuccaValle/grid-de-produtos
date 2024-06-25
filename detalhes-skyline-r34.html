@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Produto - Dodge Charger</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #333;
+            padding: 10px;
+            color: #fff;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .detalhamento-produto {
+            padding: 20px;
+        }
+
+        .detalhamento-produto img {
+            max-width: 100%;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Media queries para celulares */
+        @media screen and (max-width: 480px) {
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav ul li {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+
+            .detalhamento-produto {
+                padding: 10px;
+            }
+        }
+
+        /* Media queries para tablets */
+        @media screen and (min-width: 481px) and (max-width: 1024px) {
+            nav ul {
+                flex-direction: row;
+            }
+        }
+
+        /* Media queries para desktops/laptops */
+        @media screen and (min-width: 1025px) {}
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div>Concessionária YYYYY</div>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <article id="detalhamento-produto" class="detalhamento-produto">
+        <img src="https://motorshow.com.br/wp-content/uploads/sites/2/2021/07/nissan-skyline-gt-r-v-spec-ii-nur-1.jpg" alt="Detalhe do Produto">
+        <div>
+            <h2>Nissan Skyline GT-R R34</h2>
+            <p>Para os amantes dos carros japoneses, temos esse Nissan Skyline GT-R R34.</p>
+            <p>motor Nissan biturbo de 6 cilindros</p> 
+            <p>Uma potencia de 320cv</p> 
+            <p>Cambio de 6marchas manual </p> 
+            <p>E sua velocidade maxima chega a 250 km por hora </p> 
+            <p>Entre em contato agora mesmo pelo nosso email</p>
+        </div>
+    </article>
+</body>
+
+</html>
